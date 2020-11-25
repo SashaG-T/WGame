@@ -61,12 +61,15 @@ The make file variables are used in the following way with pscp to copy to webro
 
 EXAMPLE:
   - `pscp -r -i "C:\path\to\cert.ppk" "wbin/arcade" "doug@dougsgames.com:/home/doug/path/to/webroot/"`
+  
 The below generates the above call to pscp.
   - `DOMAIN = dougsgames.com`
   - `USER = doug`
   - `WEBROOT = /home/doug/path/to/webroot`
   - `PUBDIR = myarcade/mygame`
   - `PPK = "C:\path\to\cert.ppk"`
+  
+ Based on the example above the game would be published and found publicly at `https://dougsgames.com/myarcade/mygame`.
 
 ## Publishing Manually
 If you do not have access to a ppk or would rather publich manually so can by simply copying the contents of
