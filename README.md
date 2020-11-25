@@ -18,7 +18,7 @@ You will have to replace the following Makefile variables with your own:
 If you don't plan on publishing to a website then you can leave them blank.
 
 ## env.bat
-On my system I use a Environment Variable to point a directory that contains all my SDKS.
+On my system I use a Environment Variable to point to a directory that contains all my SDKS.
 This Environment Variable is un-oddly called SDKS.
 
 I do this so I can access an SDK such as emsdk using `%SDKS%/emsdk`.
@@ -29,7 +29,7 @@ You could setup the command prompt however you need too. `emsdk` provides utilit
 too if you fancy that better. `env.bat` just allows me to work entirely within the workspace folder.
 
 # Compile
-`
+```
   //setup our enviroment for emsdk!
   env.bat   //You'll need to add %SDKS% to your Environment Variables to use this bad boy
 
@@ -44,7 +44,7 @@ too if you fancy that better. `env.bat` just allows me to work entirely within t
 
   //Publish to site!
   mingw32-make publish
-`
+```
 # Testing
 To test you must have a working HTTP server. You can set one up quickly using `http-server`.
 Install `http-server` using `npm install -g http-server` (or you can publish to a site).
